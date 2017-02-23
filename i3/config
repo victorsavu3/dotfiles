@@ -159,12 +159,12 @@ bar {
         status_command i3pystatus -c  ~/.config/i3/i3pystatus/conf.py
 }
 
-exec_always xrandr --output HDMI-1 --auto --primary --left-of eDP-1
+exec_always xrandr --output HDMI-1 --auto --primary --left-of DP-1
 
 workspace 1 output "HDMI-1"
 workspace 3 output "HDMI-1"
-workspace 2 output "eDP-1"
-workspace 4 output "eDP-1"
+workspace 2 output "DP-1"
+workspace 4 output "DP-1"
 
 mouse_warping output
 
