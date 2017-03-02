@@ -159,13 +159,6 @@ bar {
         status_command i3pystatus -c  ~/.config/i3/i3pystatus/conf.py
 }
 
-exec_always xrandr --output HDMI-1 --auto --primary --left-of HDMI-2
-
-workspace 1 output "HDMI-1"
-workspace 3 output "HDMI-1"
-workspace 2 output "HDMI-2"
-workspace 4 output "HDMI-2"
-
 mouse_warping output
 
 workspace_auto_back_and_forth yes
@@ -174,9 +167,7 @@ exec --no-startup-id i3-msg 'workspace 3; exec thunderbird; workspace 1; exec fi
 exec --no-startup-id compton -f
 exec_always --no-startup-id numlockx
 
-bindsym $mod+l exec "/home/vsavu/.config/i3/lock.sh"
+bindsym $mod+l exec "~/.config/i3/lock.sh"
 
 bindsym $mod+KP_Add exec --no-startup-id pactl set-sink-volume 0 +3% && killall -SIGUSR1 i3status
 bindsym $mod+KP_Subtract exec --no-startup-id pactl set-sink-volume 0 -3% && killall -SIGUSR1 i3status
-bindsym $mod+P exec --no-startup-id /home/vsavu/spotify.sh play
-bindsym $mod+N exec --no-startup-id /home/vsavu/spotify.sh next
