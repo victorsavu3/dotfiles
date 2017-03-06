@@ -10,4 +10,5 @@ ln -s $HOME/dotfiles/.screenrc $HOME/.screenrc
 ln -s $HOME/dotfiles/.Xresources $HOME/.Xresources
 ln -s $HOME/dotfiles/i3 $HOME/.config/i3
 
+xrdb $HOME/.Xresources
 ./i3/i3concat.sh
