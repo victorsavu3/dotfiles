@@ -1,0 +1,6 @@
+exec_always xrandr --output HDMI1 --auto --primary --left-of HDMI2
+
+workspace 1 output "HDMI1"
+workspace 3 output "HDMI1"
+workspace 2 output "HDMI2"
+workspace 4 output "HDMI2"
